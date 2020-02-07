@@ -36,3 +36,4 @@ export { default as JandiPNG } from "./jandi.png";
 export { default as BitRisePNG } from "./bitrise.png";
 export { default as MaterialUISVG } from "./material_ui.svg";
 export { default as StyledComponentPNG } from "./styled_component.png";
+export { default as BootstrapPNG } from "./bootstrap.png";

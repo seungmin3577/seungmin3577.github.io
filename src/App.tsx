@@ -17,8 +17,8 @@ const App: React.FC = () => {
       <div className="App" style={{ height: "100%" }}>
         <Router>
           <Switch>
-            <Route path="/main" component={Main2}></Route>
-            <Route path="/" component={Main}></Route>
+            <Route path="/main" component={Main}></Route>
+            <Route path="/" component={Main2}></Route>
           </Switch>
         </Router>
       </div>

@@ -23,8 +23,8 @@ const Header = () => {
         alignItems={"center"}
         className={classes.headerContent}
       >
-        <Grid item>SeungMin</Grid>
-        <Grid item>깃헙 아이콘, 블로그 아이콘등등...</Grid>
+        <Grid item>SeungMinJeong</Grid>
+        <Grid item></Grid>
       </Grid>
     </div>
   );

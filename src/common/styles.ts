@@ -1,8 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
-import zIndex from "@material-ui/core/styles/zIndex";
-import { Height } from "@material-ui/icons";
 
 export const PALETTE = {
+  transparent: "transparent",
   black: "#000",
   white: "#fefefe"
 };
@@ -56,6 +55,17 @@ export const STYLES = makeStyles({
 });
 
 export const layoutStyles = makeStyles({
+  areaTitle: {
+    fontSize: "30px",
+    textAlign: "left",
+    verticalAlign: "center",
+    marginBottom: "25px"
+  },
+  areaSubTitle: {
+    fontSize: "24px",
+    textAlign: "left",
+    verticalAlign: "center"
+  },
   container: {
     height: "100%",
     overflowY: "scroll",
@@ -74,7 +84,9 @@ export const layoutStyles = makeStyles({
     height: "100%",
     padding: "0 30px"
   },
-  imageAreaContainer: {},
+  imageAreaContainer: {
+    borderBottom: "1px solid #cfcfcf"
+  },
   imageAreaContent: {
     position: "relative",
     background: "rgba(0,0,0,0.5) !important",
@@ -86,16 +98,26 @@ export const layoutStyles = makeStyles({
     width: "100%",
     height: "100%",
     zIndex: 99,
+    color: PALETTE.white,
+    fontSize: 24,
     background: "rgba(0,0,0,0.5) !important"
   },
-  imageAreaText: {},
+  imageAreaText: {
+    width: "100%",
+    height: "100%",
+    zIndex: 100,
+    backgroundColor: PALETTE.transparent
+  },
   imageAreaImage: {
     objectFit: "cover",
     width: "100%"
   },
-  introAreaContainer: {},
-  skillAreaContainer: {},
-  portfolioContainer: {},
+  introAreaContainer: { borderBottom: "1px solid #cfcfcf" },
+  skillAreaContainer: {
+    borderBottom: "1px solid #cfcfcf",
+    padding: "15px 30px"
+  },
+  portfolioContainer: { borderBottom: "1px solid #cfcfcf" },
   footerContainer: {
     padding: "0 30px",
     height: "300px",
