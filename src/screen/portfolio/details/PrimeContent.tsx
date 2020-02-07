@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import Slider from "react-slick";
-import { useStyles } from "../../../common";
+import { STYLES } from "../../../common";
 import { StackIcon } from "../../../components";
 
 import "../../../../node_modules/slick-carousel/slick/slick.css";
@@ -49,7 +49,7 @@ const settings = {
 };
 
 const PrimeContent = () => {
-  const classes = useStyles();
+  const classes = STYLES();
 
   return (
     <Grid container>

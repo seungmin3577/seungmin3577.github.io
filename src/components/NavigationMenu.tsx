@@ -15,7 +15,7 @@ const NavigationMenu = () => {
     <Fragment>
       <List>
         <Link
-          to={"/career/about"}
+          to={"/about"}
           style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
         >
           <ListItem button key={"About"}>
@@ -28,7 +28,7 @@ const NavigationMenu = () => {
         </Link>
 
         <Link
-          to={"/career/career"}
+          to={"/career"}
           style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
         >
           <ListItem button key={"Career"}>
@@ -41,7 +41,7 @@ const NavigationMenu = () => {
         </Link>
 
         <Link
-          to={"/career/portfolio"}
+          to={"/portfolio"}
           style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
         >
           <ListItem button key={"Portfolio"}>
@@ -80,7 +80,7 @@ const NavigationMenu = () => {
         </Link>
 
         <Link
-          to={"/career/contents/database"}
+          to={"/contents/database"}
           style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.87)" }}
         >
           <ListItem button key={"DataBase"}>

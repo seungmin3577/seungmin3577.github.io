@@ -1,7 +1,4 @@
 const CONSTANT = {
-  COLOR: {
-    LIGHT_BLUE: "#22BAD9"
-  },
   API: {
     // GRAPHQL_SERVER: "https://bon.chabot.kr:8021/api",
     GRAPHQL_SERVER: "https://localhost:8000/api",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { useStyles } from "../../../common";
+import { STYLES } from "../../../common";
 import { StackIcon } from "../../../components";
 import Slider from "react-slick";
 
@@ -34,7 +34,7 @@ const settings = {
 };
 
 const AbleModal = () => {
-  const classes = useStyles();
+  const classes = STYLES();
 
   return (
     <Grid container>

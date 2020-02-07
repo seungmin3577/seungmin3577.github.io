@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { useStyles } from "../../../common";
+import { STYLES } from "../../../common";
 import { StackIcon } from "../../../components";
 import Slider from "react-slick";
 
@@ -36,7 +36,7 @@ const settings = {
 };
 
 const TheFcContent = () => {
-  const classes = useStyles();
+  const classes = STYLES();
 
   return (
     <Grid container>

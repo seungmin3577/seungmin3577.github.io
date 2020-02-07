@@ -5,6 +5,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 
 import Main from "./screen/Main";
+import Main2 from "./screen/Main2";
 
 const client = new ApolloClient({
   uri: "https://48p1r2roz4.sse.codesandbox.io"
@@ -13,11 +14,11 @@ const client = new ApolloClient({
 const App: React.FC = () => {
   return (
     <ApolloProvider client={client}>
-      <div className="App">
+      <div className="App" style={{ height: "100%" }}>
         <Router>
           <Switch>
+            <Route path="/main" component={Main2}></Route>
             <Route path="/" component={Main}></Route>
-            <Route path="/career" component={Main}></Route>
           </Switch>
         </Router>
       </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { useStyles } from "../common";
+import { STYLES } from "../common";
 
 interface StackIcon {
   src: any;
 }
 
 const StackIcon = (props: StackIcon) => {
-  const classes = useStyles();
+  const classes = STYLES();
   const { src } = props;
 
   return (

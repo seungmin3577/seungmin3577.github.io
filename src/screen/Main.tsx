@@ -145,9 +145,9 @@ const Main = () => {
       </Drawer>
       <main className={classes.content}>
         <Switch>
-          <Route exact path="/career/about" component={About}></Route>
-          <Route exact path="/career/career" component={Career}></Route>
-          <Route exact path="/career/portfolio" component={Portfolio}></Route>
+          <Route exact path="/about" component={About}></Route>
+          <Route exact path="/career" component={Career}></Route>
+          <Route exact path="/portfolio" component={Portfolio}></Route>
         </Switch>
       </main>
     </div>
