@@ -6,7 +6,7 @@ const IntroArea = () => {
   const classes = layoutStyles();
   return (
     <Grid container className={classes.introAreaContainer}>
-      <Grid item xs>
+      <Grid item xs={12} className={classes.areaTitle}>
         Intro
       </Grid>
     </Grid>

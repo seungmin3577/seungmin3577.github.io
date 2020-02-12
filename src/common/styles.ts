@@ -71,8 +71,18 @@ export const layoutStyles = makeStyles({
     overflowY: "scroll",
     overflowX: "auto"
   },
-  headerContainer: {
+  headerContainerOnTop: {
     backgroundColor: "transparent",
+    zIndex: 100,
+    height: "60px",
+    top: 0,
+    position: "absolute",
+    color: PALETTE.white,
+    minWidth: "100%"
+  },
+  headerContainer: {
+    backgroundColor: "rgba(0,0,0,0.5) !important",
+    transition: "opacity 0.3s ease",
     zIndex: 100,
     height: "60px",
     top: 0,
@@ -112,12 +122,18 @@ export const layoutStyles = makeStyles({
     objectFit: "cover",
     width: "100%"
   },
-  introAreaContainer: { borderBottom: "1px solid #cfcfcf" },
+  introAreaContainer: {
+    borderBottom: "1px solid #cfcfcf",
+    padding: "15px 30px"
+  },
   skillAreaContainer: {
     borderBottom: "1px solid #cfcfcf",
     padding: "15px 30px"
   },
-  portfolioContainer: { borderBottom: "1px solid #cfcfcf" },
+  portfolioContainer: {
+    borderBottom: "1px solid #cfcfcf",
+    padding: "15px 30px"
+  },
   footerContainer: {
     padding: "0 30px",
     height: "300px",

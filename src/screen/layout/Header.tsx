@@ -2,21 +2,21 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { layoutStyles } from "../../common";
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    container: {
-      padding: "0 30px",
-      height: "80px",
-      maxWidth: "100%"
-    }
-  })
-);
 
-const Header = () => {
+type Props = {
+  isScrollTop?: boolean;
+};
+
+const Header = (props: Props) => {
   const classes = layoutStyles();
+  const { isScrollTop = true } = props;
 
   return (
-    <div className={classes.headerContainer}>
+    <div
+      className={
+        isScrollTop ? classes.headerContainerOnTop : classes.headerContainer
+      }
+    >
       <Grid
         container
         justify={"space-between"}
@@ -24,7 +24,7 @@ const Header = () => {
         className={classes.headerContent}
       >
         <Grid item>SeungMinJeong</Grid>
-        <Grid item></Grid>
+        <Grid item xs container justify="flex-end" alignItems="center"></Grid>
       </Grid>
     </div>
   );

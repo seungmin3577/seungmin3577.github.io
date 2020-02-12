@@ -10,29 +10,28 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 16,
-    padding: "0 15px 0 0 "
+    padding: "0 15px"
   }
 });
+
 type Props = {
   title: string;
   icons?: any;
+  refer?: any;
 };
 
-const CustomLine = ({ title }: Props) => {
+const CustomLine = ({ title, refer }: Props) => {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      justify="center"
-      alignItems="center"
-      className={classes.container}
-    >
-      <Grid item className={classes.title}>
-        {title}
+    <div ref={refer} className={classes.container}>
+      <Grid container justify="center" alignItems="center">
+        <Grid item className={classes.title}>
+          {title}
+        </Grid>
+        <Grid item xs className={classes.line} />
       </Grid>
-      <Grid item xs className={classes.line} />
-    </Grid>
+    </div>
   );
 };
 
